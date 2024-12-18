@@ -1,0 +1,84 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "TakeProfit",
+  "theme": "prism",
+  "topbar": {
+    "style": "gradient"
+  },
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#6100D2",
+    "light": "#916BFF",
+    "dark": "#6100D2",
+    "anchors": {
+      "from": "#7700FF",
+      "to": "#7700FF"
+    }
+  },
+  "background": {
+    "style": "gradient"
+  },
+  "topbarCtaButton": {
+    "name": "Platform",
+    "url": "https://takeprofit.com/platform",
+    "style": "roundedRectangle"
+  },
+  "tabs": [
+    {
+      "name": "Indie Language",
+      "url": "/indie"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/WVk8TjwU7p"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": [
+        "/indie/What-is-Indie",
+        "/indie/Language-differences-with-Python"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "/indie/Quick-start",
+        "/indie/Indicator-code-structure",
+        "/indie/Data-types-in-Indie",
+        "/indie/How-Indies-syntactic-sugar-works"
+      ]
+    },
+    {
+      "group": "Indicator Development",
+      "pages": [
+        "/indie/Algorithms-for-series-processing",
+        "/indie/Input-parameters",
+        "/indie/Schedules-and-Trading-Sessions",
+        "/indie/Fills-levels-and-bands",
+        "/indie/Request-additional-instruments"
+      ]
+    },
+    {
+      "group": "Additional",
+      "pages": [
+        "/indie/Library-reference",
+        "/indie/Changelog"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "discord": "https://discord.gg/WVk8TjwU7p",
+    "x": "https://twitter.com/TakeProfitHQ",
+    "instagram": "https://www.instagram.com/takeprofit",
+    "facebook": "https://www.facebook.com/TakeProfit"
+  }
+}

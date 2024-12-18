@@ -1,0 +1,143 @@
+---
+icon: clock
+---
+
+Managing trading activities in financial markets requires accounting for various time periods, such as pre-market, regular, and after-hours sessions. To efficiently manage these time periods and perform related calculations, we use the `indie.schedule.ScheduleRule`, `indie.schedule.Schedule` and `indie.TradingSession` classes.
+
+# `ScheduleRule`
+
+The `ScheduleRule` class defines the specific time window and list of weekdays during which it applies.
+To create a `ScheduleRule` you need to specify:
+
+- start time of the rule
+- end time of the rule
+- list of weekdays: we have constants `indie.schedule.WORKDAYS`, `indie.schedule.WEEKEND` and `indie.schedule.ALL_DAYS`. You can also create a custom list of weekdays as a regular list of enums, e.g. `[indie.schedule.WeekDay.SATURDAY, indie.schedule.WeekDay.SUNDAY]` (which is exactly the same as `indie.schedule.WEEKEND` by the way).
+
+## Types of `ScheduleRule`
+
+Depending on the start and end time values, there are three types of `ScheduleRules`.
+
+### Simple basic rule
+
+Simple basic rule is a `ScheduleRule` object with `start < end`. If `end` is a midnight, then `end = time(0, 0, 0, 0)` This type of rule applies from start time to end time on specified weekdays.
+
+Example:
+
+```py
+rule1 = ScheduleRule(start=time(hour=0), end=time(hour=5), days=ALL_DAYS) # from 00:00 am to 5:00 am everyday
+rule2 = ScheduleRule(start=time(hour=9), end=time(hour=18, minute=30), days=WORKDAYS) # from 9:00 am to 6:30 pm Monday through Friday
+rule3 = ScheduleRule(start=time(hour=20), end=time(hour=0), days=[WeekDay.WEDNESDAY]) # from 8:00 pm to 12:00 am on Wednesdays
+```
+
+### Simple 24h rule
+
+Simple 24-hours rule is a `ScheduleRule` object with `start == end == time(hour=0, minute=0, second=0, microsecond=0)`. This type of rule applies 24 hours on specified weekdays.
+
+Example:
+
+```py
+rule24 = ScheduleRule(start=time(hour=0), end=time(hour=0), days=ALL_DAYS) # from 12:00 am to 12:00 am every day (24/7)
+```
+
+### Overnight rule
+
+Overnight rule is a `ScheduleRule` object with `start > end` or `start == end != time(hour=0, minute=0, second=0, microsecond=0)`. This type of rule applies from start time of the day before specified to end time of specified day.
+
+Example:
+
+```py
+overnight_rule1 = ScheduleRule(start=time(hour=19), end=time(hour=7), days=[WeekDay.MONDAY]) # from 7:00 pm on Sunday to 7:00 am on Mondays
+overnight_rule2 = ScheduleRule(start=time(hour=21), end=time(hour=3), days=WORKDAYS) # for the whole week: from 9:00 pm on Sunday to 3:00 am on Friday
+overnight_rule3 = ScheduleRule(start=time(hour=15), end=time(hour=15), days=WORKDAYS) # from 3:00 pm on Sunday to 3:00 pm on Friday
+```
+
+Another way to represent an overnight rule is to use a combination of two different non-overnight rules. The first rule will have the same start time, the end time will be `time(0, 0, 0, 0)`, the second rule will have the start time equal to `time(0, 0, 0, 0)` and the end time will be the same as the original rule.
+
+```py
+overnight_rule = ScheduleRule(start=time(hour=19), end=time(hour=7), days=[WeekDay.MONDAY]) # from 7:00 pm on Sunday to 7:00 am on Mondays
+# it is equivalent to
+simple_rule1 = ScheduleRule(start=time(hour=19), end=time(hour=0), days=[WeekDay.SUNDAY])
+simple_rule2 = ScheduleRule(start=time(hour=0), end=time(hour=7), days=[WeekDay.MONDAY])
+```
+
+# `Schedule`
+
+Each `Schedule` instance defines specific time windows and exceptions to a regular schedule. To create your own schedule, you need to define:
+
+- `rules` - a list of ScheduleRules
+- `except_once` - a list of specific dates for one-time exceptions (e.g., special events or emergencies) that deviate from the usual schedule
+- `except_yearly` - a list of dates representing annual exceptions (e.g., holidays)
+- `timezone` - the time zone in which the schedule is defined. The time zone should be indicated according to the [IANA library standards](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (e.g., "America/New_York" or "Europe/London").
+
+It is quite resource-inefficient to create `Schedule` objects within the `Context.calc` method, as this would instantiate a new object on each bar, resulting in a high number of short-lived objects. Therefore, it is recommended to declare them in the `__init__` function in the class definition, which will create them once during the indicator's initialization.
+
+Example:
+
+```py
+# indie:lang_version = 4
+from indie import indicator, MainContext
+from indie.schedule import ScheduleRule, Schedule, WORKDAYS, WEEKEND
+from datetime import time, datetime
+
+@indicator('Example')
+class Main(MainContext):
+    def __init__(self):
+        rule1 = ScheduleRule(start=time(hour=9), end=time(hour=18), days=WORKDAYS)
+        rule2 = ScheduleRule(start=time(hour=12), end=time(hour=15), days=WEEKEND)
+        self.schedule = Schedule(rules=[rule1, rule2], except_once=[datetime(year=2025, month=4, day=5)], timezone="America/New_York")
+
+    def calc(self):
+        # using self.schedule, e.g.
+        return 1 if self.time[0] in self.schedule else 0
+```
+
+If you want to use `self.info.marketdata_timezone` as the timezone in a `Schedule()`, you need to define a `pre_calc` function in your class and initialize the field inside this function. This is necessary because in the `__init__` method, `self.info` and `self.trading_session` data are not yet available.
+
+Example:
+
+```py
+# indie:lang_version = 4
+from indie import indicator, MainContext, Optional
+from indie.schedule import ScheduleRule, Schedule, WORKDAYS, WEEKEND
+from datetime import time, datetime
+
+@indicator('Example')
+class Main(MainContext):
+    def __init__(self):
+        self.schedule: Optional[Schedule] = None
+
+    def pre_calc(self):
+        rule1 = ScheduleRule(start=time(hour=9), end=time(hour=18), days=WORKDAYS)
+        rule2 = ScheduleRule(start=time(hour=12), end=time(hour=15), days=WEEKEND)
+        self.schedule = Schedule(rules=[rule1, rule2], except_once=[datetime(year=2025, month=4, day=5)], timezone=self.info.marketdata_timezone)
+
+
+    def calc(self):
+        # using self.schedule, e.g.
+        return 1 if self.time[0] in self.schedule.value() else 0
+```
+
+`Schedule` class provides several key functionalities for working with schedules. One of the primary actions is checking whether the schedule is empty using the [`is_empty`](Library-reference#func_Schedule_is_empty) method. Additionally, the [`in`](Library-reference#func_Schedule_contains) operator allows you to verify if a given timestamp falls within the time periods defined by the schedule. Another useful method is [`is_same_period`](Library-reference#func_Schedule_is_same_period), which checks whether two timestamps belong to the same schedule period or fall on different days.
+
+# `TradingSession`
+
+The `TradingSession` class represents the different phases of market trading. These phases correspond to specific trading windows with unique rules that vary depending on the market. It is not allowed to create objects of the `TradingSession` class in Indie code; an already created instance of the object is available in `self.trading_session`.
+
+There are three fields in `TradingSession` class:
+
+- `pre_market`
+- `regular`
+- `after_hours`
+
+Each of these fields is an instance of the `Schedule` class. The `pre_market` and `after_hours` schedules can be empty, which can be verified using the `is_empty` method.
+
+The main operations with `TradingSession` objects include using the [`in`](Library-reference#func_TradingSession_contains) operator to check if a specific timestamp falls within any of the trading session periods, and the [`is_same_period`](Library-reference#func_TradingSession_is_same_period) method to determine whether two timestamps belong to the same trading period.
+
+The `Context` class provides four methods to determine whether the current bar is the first or last bar of a trading session:
+
+- `is_first_in_session()`
+- `is_first_in_regular_session()`
+- `is_last_in_session()`
+- `is_last_in_regular_session()`
+
+If `pre_market` is empty, the `is_first_in_session` and `is_first_in_regular_session` methods will return the same value. Similarly, if `after_hours` is empty, `is_last_in_session` and `is_last_in_regular_session` will return the same value. If the first or last bar of the session does not exist or is unavailable, these methods will not return `True`.
