@@ -28,7 +28,7 @@ Base class for the classes that perform some processing of series data.
 
 [`MainContext`](#class_MainContext) [`SecContext`](#class_SecContext)
 
-—
+---
 
 ### <a name="interface_Color">`Color`</a>
 
@@ -44,7 +44,7 @@ Data type to represent color.
 
 [`Plot`](#class_Plot) [`Fill`](#class_Fill) [`color`](#pkg_color)
 
-—
+---
 
 ### <a name="class_Context">`Context`</a>
 
@@ -60,7 +60,7 @@ Data type that represents an instrument with OHLCV series values and other relat
 
 [`MainContext`](#class_MainContext) [`SecContext`](#class_SecContext) [`SymbolInfo`](#class_SymbolInfo) [`Series[T]`](#class_Series)
 
-—
+---
 
 ### <a name="class_Fill">`Fill`</a>
 
@@ -76,7 +76,7 @@ Class that represents a fill object.
 
 [`@fill()`](#decor_fill) [`Plot`](#class_Plot)
 
-—
+---
 
 ### <a name="class_IndieError">`IndieError`</a>
 
@@ -88,7 +88,7 @@ Data type for Indie errors.
 
 [`__init__()`](#func_IndieError_init)
 
-—
+---
 
 ### <a name="class_MainContext">`MainContext`</a>
 
@@ -108,7 +108,7 @@ Base class for the class that represents main context.
 
 [`SecContext`](#class_SecContext) [`Algorithm`](#class_Algorithm)
 
-—
+---
 
 ### <a name="class_MutSeriesF">`MutSeriesF`</a>
 
@@ -128,7 +128,7 @@ Data type that represents read-write series of float values like prices of some 
 
 [`Context.new_mut_series_f()`](#func_Context_new_mut_series_f) [`Series[T]`](#class_Series) [`SeriesF`](#class_SeriesF) [`MutSeries[T]`](#class_MutSeries) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_MutSeries">`MutSeries[T]`</a>
 
@@ -148,7 +148,7 @@ Generic data type that represents read-write series of values of type `T`. Type 
 
 [`Context.new_mut_series()`](#func_Context_new_mut_series) [`Series[T]`](#class_Series) [`SeriesF`](#class_SeriesF) [`MutSeriesF`](#class_MutSeriesF) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_Optional">`Optional[T]`</a>
 
@@ -160,7 +160,7 @@ Builtin Indie type (similar to Python's `typing.Optional`).
 
 [`__bool__()`](#func_Optional_bool) [`__isnone__()`](#func_Optional_isnone) [`value()`](#func_Optional_value) [`value_or()`](#func_Optional_value_or)
 
-—
+---
 
 ### <a name="class_Plot">`Plot`</a>
 
@@ -176,7 +176,7 @@ Class that represents a plot object.
 
 [`@plot()`](#decor_plot) [`Fill`](#class_Fill)
 
-—
+---
 
 ### <a name="class_SecContext">`SecContext`</a>
 
@@ -196,7 +196,7 @@ Base class for the classes that represent additional contexts besides the main o
 
 [`MainContext`](#class_MainContext) [`Algorithm`](#class_Algorithm)
 
-—
+---
 
 ### <a name="class_SeriesF">`SeriesF`</a>
 
@@ -212,7 +212,7 @@ Data type that represents read only series of float values like prices of some i
 
 [`Series[T]`](#class_Series) [`MutSeries[T]`](#class_MutSeries) [`MutSeriesF`](#class_MutSeriesF) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_Series">`Series[T]`</a>
 
@@ -228,7 +228,7 @@ Generic data type that represents read only series of values of type `T`. Type `
 
 [`SeriesF`](#class_SeriesF) [`MutSeries[T]`](#class_MutSeries) [`MutSeriesF`](#class_MutSeriesF) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_SymbolInfo">`SymbolInfo`</a>
 
@@ -244,7 +244,7 @@ Data type to represent information about the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_TimeFrame">`TimeFrame`</a>
 
@@ -264,7 +264,7 @@ Use `tf()` to create TimeFrame instances.
 
 [`TimeFrame.from_str()`](#func_TimeFrame_from_str)
 
-—
+---
 
 ### <a name="class_TradingSession">`TradingSession`</a>
 
@@ -280,7 +280,7 @@ Data type to represent different trading periods within a day, including pre-mar
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`ScheduleRule`](#class_ScheduleRule)
 
-—
+---
 
 ### <a name="class_Var">`Var[T]`</a>
 
@@ -296,7 +296,7 @@ Generic data type that represents a rollbackable container for value of type `T`
 
 [`Context.new_var()`](#func_Context_new_var) [`Series[T]`](#class_Series) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="class_format">`format`</a>
 
@@ -312,7 +312,7 @@ Enum-like class with constants that determine how to format the indicator value 
 
 [`@indicator()`](#decor_indicator)
 
-—
+---
 
 ### <a name="class_line_style">`line_style`</a>
 
@@ -324,7 +324,7 @@ Enum-like class with constants of line styles.
 
 [`DASHED`](#obj_line_style_DASHED) [`DOTTED`](#obj_line_style_DOTTED) [`SOLID`](#obj_line_style_SOLID)
 
-—
+---
 
 ### <a name="class_param">`param`</a>
 
@@ -340,7 +340,7 @@ Class with decorators of indicator input parameters of various types.
 
 [`@indicator()`](#decor_indicator)
 
-—
+---
 
 ### <a name="class_plot_style">`plot_style`</a>
 
@@ -352,7 +352,7 @@ Enum-like class with constants of plot styles.
 
 [`COLUMNS`](#obj_plot_style_COLUMNS) [`HISTOGRAM`](#obj_plot_style_HISTOGRAM) [`LINE`](#obj_plot_style_LINE) [`STEPS`](#obj_plot_style_STEPS)
 
-—
+---
 
 ### <a name="class_source">`source`</a>
 
@@ -368,7 +368,7 @@ Enum-like class with constants for various price sources (it is used in `@indie.
 
 [`@indicator()`](#decor_indicator)
 
-—
+---
 
 ### <a name="class_time_frame_unit">`time_frame_unit`</a>
 
@@ -410,7 +410,7 @@ Most of the functions in the `indie.algorithms` package are decorated with `@ind
 
 [`SeriesF`](#class_SeriesF) [`Context`](#class_Context) [`Algorithm`](#class_Algorithm)
 
-—
+---
 
 ### <a name="decor_band">`@band()`</a>
 
@@ -461,7 +461,7 @@ def Main(self):
 
 [`@indicator()`](#decor_indicator) [`@level()`](#decor_level)
 
-—
+---
 
 ### <a name="decor_fill">`@fill()`</a>
 
@@ -511,7 +511,7 @@ More info about fills (for example about multicolored ones) could be found in [F
 
 [`@plot()`](#decor_plot) [`Fill`](#class_Fill)
 
-—
+---
 
 ### <a name="decor_indicator">`@indicator()`</a>
 
@@ -540,7 +540,7 @@ Decorator that should be applied to the `Main` entry point of any indicator.
 
   - `precision` — Number of digits after floating point for indicator output values.
 
-—
+---
 
 ### <a name="decor_level">`@level()`</a>
 
@@ -585,7 +585,7 @@ def Main(self):
 
 [`@indicator()`](#decor_indicator) [`@band()`](#decor_band)
 
-—
+---
 
 ### <a name="decor_param_bool">`@param.bool()`</a>
 
@@ -623,7 +623,7 @@ def Main(self, is_something_enabled):
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_param_float">`@param.float()`</a>
 
@@ -670,7 +670,7 @@ def Main(self, speed_of_light):
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_param_int">`@param.int()`</a>
 
@@ -717,7 +717,7 @@ def Main(self, meaning_of_life):
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_param_source">`@param.source()`</a>
 
@@ -762,7 +762,7 @@ Even if `options` parameter is not used then in Settings panel nevertheless ther
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param) [`source`](#class_source)
 
-—
+---
 
 ### <a name="decor_param_str">`@param.str()`</a>
 
@@ -807,7 +807,7 @@ If `options` parameter is used then in Settings panel there will be a combobox w
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_param_string">`@param.string()`</a>
 
@@ -852,7 +852,7 @@ If `options` parameter is used then in Settings panel there will be a combobox w
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_param_time_frame">`@param.time_frame()`</a>
 
@@ -899,7 +899,7 @@ If `options` parameter is used then in Settings panel there will be a combobox w
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param) [`TimeFrame`](#class_TimeFrame) [`TimeFrame.from_str()`](#func_TimeFrame_from_str)
 
-—
+---
 
 ### <a name="decor_param_ref">`@param_ref()`</a>
 
@@ -939,7 +939,7 @@ class Main(MainContext):
 
 [`@indicator()`](#decor_indicator) [`param`](#class_param)
 
-—
+---
 
 ### <a name="decor_plot">`@plot()`</a>
 
@@ -998,7 +998,7 @@ def Main(self):
 
 [`@fill()`](#decor_fill) [`Plot`](#class_Plot)
 
-—
+---
 
 ### <a name="decor_sec_context">`@sec_context()`</a>
 
@@ -1066,7 +1066,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Algorithm`](#class_Algorithm)
 
-—
+---
 
 ### <a name="func_Color_call">`Color.__call__()`</a>
 
@@ -1098,7 +1098,7 @@ Method `__call__` should never be called directly, instead `color_obj(value)` sy
 
 [`color`](#pkg_color) [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="func_Context_calc_on">`Context.calc_on()`</a>
 
@@ -1138,7 +1138,7 @@ At least one of optional arguments (`exchange`, `ticker` or `time_frame`) must b
 
 [`@sec_context()`](#decor_sec_context) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="func_Context_is_first_in_regular_session">`Context.is_first_in_regular_session()`</a>
 
@@ -1160,7 +1160,7 @@ The function will return `False` if the first bar of the regular session does no
 
 [`Context`](#class_Context) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_Context_is_first_in_session">`Context.is_first_in_session()`</a>
 
@@ -1182,7 +1182,7 @@ The function will return `False` if the first bar of the session does not exist 
 
 [`Context`](#class_Context) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_Context_is_last_in_regular_session">`Context.is_last_in_regular_session()`</a>
 
@@ -1204,7 +1204,7 @@ The function will return `False` if the session ends without a valid last bar (e
 
 [`Context`](#class_Context) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_Context_is_last_in_session">`Context.is_last_in_session()`</a>
 
@@ -1226,7 +1226,7 @@ The function will return `False` if the session ends without a valid last bar (e
 
 [`Context`](#class_Context) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_Context_new_mut_series">`Context.new_mut_series()`</a>
 
@@ -1250,7 +1250,7 @@ new_mut_series(default: T, size: int = 2) -> indie.MutSeries[T]
 
 [`MutSeries[T].new()`](#func_MutSeries_new) [`Context.new_mut_series_f()`](#func_Context_new_mut_series_f) [`Context.new_var()`](#func_Context_new_var) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="func_Context_new_mut_series_f">`Context.new_mut_series_f()`</a>
 
@@ -1277,7 +1277,7 @@ new_mut_series_f(
 
 [`MutSeries[T].new()`](#func_MutSeries_new) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="func_Context_new_var">`Context.new_var()`</a>
 
@@ -1299,7 +1299,7 @@ new_var(init: T) -> indie.Var[T]
 
 [`Var[T].new()`](#func_Var_new) [`MutSeries[T].new()`](#func_MutSeries_new) [`Context.new_mut_series()`](#func_Context_new_mut_series) [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="func_Fill_init">`Fill.__init__()`</a>
 
@@ -1326,7 +1326,7 @@ __init__(
 
 [`Fill`](#class_Fill)
 
-—
+---
 
 ### <a name="func_IndieError_init">`IndieError.__init__()`</a>
 
@@ -1348,7 +1348,7 @@ __init__(msg: str) -> NoneType
 
 [`IndieError`](#class_IndieError)
 
-—
+---
 
 ### <a name="func_MutSeries_setitem">`MutSeries[T].__setitem__()`</a>
 
@@ -1383,7 +1383,7 @@ ms[0] = 42  # This implicitly calls `ms.__setitem__(0, 42)`
 
 [`MutSeries[T]`](#class_MutSeries)
 
-—
+---
 
 ### <a name="func_MutSeries_calc">`MutSeries[T].calc()`</a>
 
@@ -1413,7 +1413,7 @@ calc(
 
 [`Context.new_mut_series_f()`](#func_Context_new_mut_series_f) [`MutSeries[T].new()`](#func_MutSeries_new) [`MutSeries[T]`](#class_MutSeries)
 
-—
+---
 
 ### <a name="func_MutSeries_new">`MutSeries[T].new()`</a>
 
@@ -1443,7 +1443,7 @@ new(
 
 [`Context.new_mut_series_f()`](#func_Context_new_mut_series_f) [`MutSeries[T]`](#class_MutSeries)
 
-—
+---
 
 ### <a name="func_Optional_bool">`Optional[T].__bool__()`</a>
 
@@ -1465,7 +1465,7 @@ This method is present for `Optional[T]` only if `T` can be converted to `bool`.
 
 [`Optional[T]`](#class_Optional)
 
-—
+---
 
 ### <a name="func_Optional_value">`Optional[T].value()`</a>
 
@@ -1483,7 +1483,7 @@ value() -> T
 
 [`Optional[T]`](#class_Optional)
 
-—
+---
 
 ### <a name="func_Optional_value_or">`Optional[T].value_or()`</a>
 
@@ -1505,7 +1505,7 @@ value_or(default: T) -> T
 
 [`Optional[T]`](#class_Optional)
 
-—
+---
 
 ### <a name="func_Plot_init">`Plot.__init__()`</a>
 
@@ -1535,7 +1535,7 @@ __init__(
 
 [`Plot`](#class_Plot)
 
-—
+---
 
 ### <a name="func_Series_getitem">`Series[T].__getitem__()`</a>
 
@@ -1569,7 +1569,7 @@ Method `__getitem__` should never be called directly. Instead syntax `series_obj
 
 [`Context`](#class_Context) [`Series[T]`](#class_Series)
 
-—
+---
 
 ### <a name="func_Series_len">`Series[T].__len__()`</a>
 
@@ -1597,7 +1597,7 @@ Method `__len__` should never be called directly. Instead syntax `len(series_obj
 
 [`Series[T]`](#class_Series)
 
-—
+---
 
 ### <a name="func_Series_get">`Series[T].get()`</a>
 
@@ -1623,7 +1623,7 @@ get(offset: int, default: T, neg_offset_ok: bool = False) -> T
 
 [`Context`](#class_Context) [`Series[T]`](#class_Series)
 
-—
+---
 
 ### <a name="func_Series_request_size">`Series[T].request_size()`</a>
 
@@ -1645,7 +1645,7 @@ request_size(size: int) -> NoneType
 
 [`Context`](#class_Context) [`Series[T]`](#class_Series)
 
-—
+---
 
 ### <a name="func_TimeFrame_init">`TimeFrame.__init__()`</a>
 
@@ -1669,7 +1669,7 @@ __init__(count: int, unit: int) -> NoneType
 
 [`TimeFrame.from_str()`](#func_TimeFrame_from_str) [`TimeFrame`](#class_TimeFrame)
 
-—
+---
 
 ### <a name="func_TimeFrame_from_str">`TimeFrame.from_str()`</a>
 
@@ -1691,7 +1691,7 @@ from_str(tf_str: str) -> indie.TimeFrame
 
 [`TimeFrame`](#class_TimeFrame)
 
-—
+---
 
 ### <a name="func_TimeFrame_to_minutes">`TimeFrame.to_minutes()`</a>
 
@@ -1709,7 +1709,7 @@ to_minutes() -> int
 
 [`TimeFrame.from_str()`](#func_TimeFrame_from_str) [`TimeFrame`](#class_TimeFrame)
 
-—
+---
 
 ### <a name="func_Var_get">`Var[T].get()`</a>
 
@@ -1727,7 +1727,7 @@ get() -> T
 
 [`Var[T].set()`](#func_Var_set) [`Context`](#class_Context) [`Var[T]`](#class_Var)
 
-—
+---
 
 ### <a name="func_Var_new">`Var[T].new()`</a>
 
@@ -1749,7 +1749,7 @@ new(init: T) -> indie.Var[T]
 
 [`Context.new_mut_series_f()`](#func_Context_new_mut_series_f) [`Var[T]`](#class_Var)
 
-—
+---
 
 ### <a name="func_Var_set">`Var[T].set()`</a>
 
@@ -1771,7 +1771,7 @@ set(T) -> NoneType
 
 [`Var[T].get()`](#func_Var_get) [`Context`](#class_Context) [`Var[T]`](#class_Var)
 
-—
+---
 
 ### <a name="func_tf">`tf()`</a>
 
@@ -1813,7 +1813,7 @@ Represents context of an instrument which is currently bound to this algorithm i
 
 [`Algorithm`](#class_Algorithm)
 
-—
+---
 
 ### <a name="obj_Context_bar_count">`Context.bar_count`</a>
 
@@ -1829,7 +1829,7 @@ Current total number of bars in this context's instrument which the indicator ha
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_bar_index">`Context.bar_index`</a>
 
@@ -1845,7 +1845,7 @@ Index of a last (current) bar in this context's instrument which the indicator h
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_close">`Context.close`</a>
 
@@ -1861,7 +1861,7 @@ Series of 'close' prices of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_high">`Context.high`</a>
 
@@ -1877,7 +1877,7 @@ Series of 'high' prices of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_hl2">`Context.hl2`</a>
 
@@ -1893,7 +1893,7 @@ Series of '(high + low) / 2' values of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_hlc3">`Context.hlc3`</a>
 
@@ -1909,7 +1909,7 @@ Series of '(high + low + close) / 3' values of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_info">`Context.info`</a>
 
@@ -1925,7 +1925,7 @@ Information about the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_closed_bar">`Context.is_closed_bar`</a>
 
@@ -1941,7 +1941,7 @@ Flag that is `True` if the current bar is a historical bar or it is a final upda
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_history">`Context.is_history`</a>
 
@@ -1957,7 +1957,7 @@ Flag that is `True` if the current bar is a historical bar.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_last_bar">`Context.is_last_bar`</a>
 
@@ -1973,7 +1973,7 @@ Flag that is `True` if the current bar is the last bar in the history or it is a
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_last_history_bar">`Context.is_last_history_bar`</a>
 
@@ -1989,7 +1989,7 @@ Flag that is `True` if the current bar is the last bar of the historical part of
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_new_bar">`Context.is_new_bar`</a>
 
@@ -2005,7 +2005,7 @@ Flag that is `True` if the current bar is a historical bar or it is a first upda
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_is_realtime">`Context.is_realtime`</a>
 
@@ -2021,7 +2021,7 @@ Flag that is `True` if the last (current) bar is a realtime bar.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_low">`Context.low`</a>
 
@@ -2037,7 +2037,7 @@ Series of 'low' prices of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_ohlc4">`Context.ohlc4`</a>
 
@@ -2053,7 +2053,7 @@ Series of '(open + high + low + close) / 4' values of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_open">`Context.open`</a>
 
@@ -2069,7 +2069,7 @@ Series of 'open' prices of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_time">`Context.time`</a>
 
@@ -2085,7 +2085,7 @@ Series of timestamps (as unix time UTC seconds) of the context's instrument. Eve
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_time_frame">`Context.time_frame`</a>
 
@@ -2101,7 +2101,7 @@ Time frame of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_trading_session">`Context.trading_session`</a>
 
@@ -2117,7 +2117,7 @@ Trading session of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_Context_volume">`Context.volume`</a>
 
@@ -2133,7 +2133,7 @@ Series of 'volume' values of the context's instrument.
 
 [`Context`](#class_Context)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_exchange_aliases">`SymbolInfo.exchange_aliases`</a>
 
@@ -2149,7 +2149,7 @@ Commonly recognized (but not exactly standardized) alias for an exchange. For ex
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_exchange_code">`SymbolInfo.exchange_code`</a>
 
@@ -2165,7 +2165,7 @@ Exchange code of the context's instrument. For stocks it is a [MIC](https://en.w
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_marketdata_timezone">`SymbolInfo.marketdata_timezone`</a>
 
@@ -2181,7 +2181,7 @@ _field_
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_price_precision">`SymbolInfo.price_precision`</a>
 
@@ -2197,7 +2197,7 @@ Price precision of the context's instrument. For example, price precision of `10
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_tick_size">`SymbolInfo.tick_size`</a>
 
@@ -2213,7 +2213,7 @@ Absolute value of a minimal movement of a price of the context's instrument in c
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_ticker">`SymbolInfo.ticker`</a>
 
@@ -2229,7 +2229,7 @@ Ticker of the context's instrument.
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_SymbolInfo_timezone">`SymbolInfo.timezone`</a>
 
@@ -2245,7 +2245,7 @@ Name of the exchange timezone of the context's instrument. For example, `'Americ
 
 [`SymbolInfo`](#class_SymbolInfo)
 
-—
+---
 
 ### <a name="obj_format_INHERITED">`format.INHERITED`</a>
 
@@ -2261,7 +2261,7 @@ Indicator output values are formatted same as values of the main chart instrumen
 
 [`format`](#class_format)
 
-—
+---
 
 ### <a name="obj_format_PRICE">`format.PRICE`</a>
 
@@ -2277,7 +2277,7 @@ Indicator output values are formatted using fixed number of digits after the flo
 
 [`format`](#class_format)
 
-—
+---
 
 ### <a name="obj_format_VOLUME">`format.VOLUME`</a>
 
@@ -2293,7 +2293,7 @@ Indicator output values are formatted according to the rules of formatting large
 
 [`format`](#class_format)
 
-—
+---
 
 ### <a name="obj_line_style_DASHED">`line_style.DASHED`</a>
 
@@ -2309,7 +2309,7 @@ Built-in line style constant that determines how the line is rendered.
 
 [`line_style`](#class_line_style)
 
-—
+---
 
 ### <a name="obj_line_style_DOTTED">`line_style.DOTTED`</a>
 
@@ -2325,7 +2325,7 @@ Built-in line style constant that determines how the line is rendered.
 
 [`line_style`](#class_line_style)
 
-—
+---
 
 ### <a name="obj_line_style_SOLID">`line_style.SOLID`</a>
 
@@ -2341,7 +2341,7 @@ Built-in line style constant that determines how the line is rendered.
 
 [`line_style`](#class_line_style)
 
-—
+---
 
 ### <a name="obj_plot_style_COLUMNS">`plot_style.COLUMNS`</a>
 
@@ -2357,7 +2357,7 @@ Built-in plot style constant that determines how the plot data is rendered.
 
 [`plot_style`](#class_plot_style)
 
-—
+---
 
 ### <a name="obj_plot_style_HISTOGRAM">`plot_style.HISTOGRAM`</a>
 
@@ -2373,7 +2373,7 @@ Built-in plot style constant that determines how the plot data is rendered.
 
 [`plot_style`](#class_plot_style)
 
-—
+---
 
 ### <a name="obj_plot_style_LINE">`plot_style.LINE`</a>
 
@@ -2389,7 +2389,7 @@ Built-in plot style constant that determines how the plot data is rendered.
 
 [`plot_style`](#class_plot_style)
 
-—
+---
 
 ### <a name="obj_plot_style_STEPS">`plot_style.STEPS`</a>
 
@@ -2405,7 +2405,7 @@ Built-in plot style constant that determines how the plot data is rendered.
 
 [`plot_style`](#class_plot_style)
 
-—
+---
 
 ### <a name="obj_source_CLOSE">`source.CLOSE`</a>
 
@@ -2421,7 +2421,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_HIGH">`source.HIGH`</a>
 
@@ -2437,7 +2437,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_HL2">`source.HL2`</a>
 
@@ -2453,7 +2453,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_HLC3">`source.HLC3`</a>
 
@@ -2469,7 +2469,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_LOW">`source.LOW`</a>
 
@@ -2485,7 +2485,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_OHLC4">`source.OHLC4`</a>
 
@@ -2501,7 +2501,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_OPEN">`source.OPEN`</a>
 
@@ -2517,7 +2517,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_source_VOLUME">`source.VOLUME`</a>
 
@@ -2533,7 +2533,7 @@ Built-in source kind constant which corresponds to `Context`'s series field and 
 
 [`source`](#class_source)
 
-—
+---
 
 ### <a name="obj_time_frame_unit_DAY">`time_frame_unit.DAY`</a>
 
@@ -2549,7 +2549,7 @@ Built-in constants that represent time frame units.
 
 [`time_frame_unit`](#class_time_frame_unit)
 
-—
+---
 
 ### <a name="obj_time_frame_unit_HOUR">`time_frame_unit.HOUR`</a>
 
@@ -2565,7 +2565,7 @@ Built-in constants that represent time frame units.
 
 [`time_frame_unit`](#class_time_frame_unit)
 
-—
+---
 
 ### <a name="obj_time_frame_unit_MINUTE">`time_frame_unit.MINUTE`</a>
 
@@ -2581,7 +2581,7 @@ Built-in constants that represent time frame units.
 
 [`time_frame_unit`](#class_time_frame_unit)
 
-—
+---
 
 ### <a name="obj_time_frame_unit_MONTH">`time_frame_unit.MONTH`</a>
 
@@ -2597,7 +2597,7 @@ Built-in constants that represent time frame units.
 
 [`time_frame_unit`](#class_time_frame_unit)
 
-—
+---
 
 ### <a name="obj_time_frame_unit_WEEK">`time_frame_unit.WEEK`</a>
 
@@ -2613,7 +2613,7 @@ Built-in constants that represent time frame units.
 
 [`time_frame_unit`](#class_time_frame_unit)
 
-—
+---
 
 # Package <a name="pkg_algorithms">`indie.algorithms`</a>
 
@@ -2643,12 +2643,6 @@ Average directional index algorithm. Read [here](./Algorithms-for-series-process
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Adx_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Adx_new)
 
-- SOURCE CODE
-
-```py{file="adx.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2662,7 +2656,7 @@ def Main(self):
     return minus_di[0], adx[0], plus_di[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Atr">`Atr`</a>
 
@@ -2678,12 +2672,6 @@ Average true range algorithm. Read [here](./Algorithms-for-series-processing#tld
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Atr_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Atr_new)
 
-- SOURCE CODE
-
-```py{file="atr.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2697,7 +2685,7 @@ def Main(self):
     return atr[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Bb">`Bb`</a>
 
@@ -2713,12 +2701,6 @@ Bollinger bands algorithm. Read [here](./Algorithms-for-series-processing#tldr-h
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Bb_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Bb_new)
 
-- SOURCE CODE
-
-```py{file="bb.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2732,7 +2714,7 @@ def Main(self):
     return lower[0], middle[0], upper[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Cci">`Cci`</a>
 
@@ -2748,12 +2730,6 @@ Commodity channel index algorithm. Read [here](./Algorithms-for-series-processin
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Cci_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Cci_new)
 
-- SOURCE CODE
-
-```py{file="cci.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2767,7 +2743,7 @@ def Main(self):
     return cci[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Change">`Change`</a>
 
@@ -2783,12 +2759,6 @@ Algorithm to calculate change of a series of values. Read [here](./Algorithms-fo
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Change_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Change_new)
 
-- SOURCE CODE
-
-```py{file="change.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2802,7 +2772,7 @@ def Main(self):
     return ch[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Corr">`Corr`</a>
 
@@ -2818,12 +2788,6 @@ Correlation coefficient algorithm. Read [here](./Algorithms-for-series-processin
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Corr_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Corr_new)
 
-- SOURCE CODE
-
-```py{file="corr.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2837,7 +2801,7 @@ def Main(self):
     return corr[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_CumSum">`CumSum`</a>
 
@@ -2853,12 +2817,6 @@ Cumulative sum algorithm. Read [here](./Algorithms-for-series-processing#tldr-ho
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_CumSum_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_CumSum_new)
 
-- SOURCE CODE
-
-```py{file="cum_sum.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2872,7 +2830,7 @@ def Main(self):
     return cs[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Dev">`Dev`</a>
 
@@ -2888,12 +2846,6 @@ Mean absolute deviation algorithm. Read [here](./Algorithms-for-series-processin
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Dev_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Dev_new)
 
-- SOURCE CODE
-
-```py{file="dev.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2907,7 +2859,7 @@ def Main(self):
     return dev[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Donchian">`Donchian`</a>
 
@@ -2923,12 +2875,6 @@ Donchian channels algorithm. Read [here](./Algorithms-for-series-processing#tldr
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Donchian_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Donchian_new)
 
-- SOURCE CODE
-
-```py{file="donchian.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2942,7 +2888,7 @@ def Main(self):
     return d[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Ema">`Ema`</a>
 
@@ -2958,12 +2904,6 @@ Exponential moving average algorithm. Read [here](./Algorithms-for-series-proces
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Ema_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Ema_new)
 
-- SOURCE CODE
-
-```py{file="ema.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -2977,7 +2917,7 @@ def Main(self):
     return ema[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_FixNan">`FixNan`</a>
 
@@ -2992,12 +2932,6 @@ Algorithm that replaces all `math.nan` values with the most recent corresponding
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_FixNan_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_FixNan_new)
-
-- SOURCE CODE
-
-```py{file="fix_nan.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3022,7 +2956,7 @@ def Main(self):
 
 [`NanToZero`](#class_alg_NanToZero)
 
-—
+---
 
 ### <a name="class_alg_Highest">`Highest`</a>
 
@@ -3037,12 +2971,6 @@ Algorithm that returns the maximum value over a given period. Read [here](./Algo
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Highest_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Highest_new)
-
-- SOURCE CODE
-
-```py{file="highest.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3061,7 +2989,7 @@ def Main(self):
 
 [`SinceHighest`](#class_alg_SinceHighest)
 
-—
+---
 
 ### <a name="class_alg_LinReg">`LinReg`</a>
 
@@ -3077,12 +3005,6 @@ Linear regression algorithm. Read [here](./Algorithms-for-series-processing#tldr
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_LinReg_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_LinReg_new)
 
-- SOURCE CODE
-
-```py{file="lin_reg.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3096,7 +3018,7 @@ def Main(self):
     return lr[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Lowest">`Lowest`</a>
 
@@ -3111,12 +3033,6 @@ Algorithm that returns the minimum value over a given period. Read [here](./Algo
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Lowest_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Lowest_new)
-
-- SOURCE CODE
-
-```py{file="lowest.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3135,7 +3051,7 @@ def Main(self):
 
 [`SinceLowest`](#class_alg_SinceLowest)
 
-—
+---
 
 ### <a name="class_alg_Ma">`Ma`</a>
 
@@ -3151,12 +3067,6 @@ Moving average algorithm. Read [here](./Algorithms-for-series-processing#tldr-ho
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Ma_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Ma_new)
 
-- SOURCE CODE
-
-```py{file="ma.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3169,7 +3079,7 @@ def Main(self):
     return ma[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Median">`Median`</a>
 
@@ -3185,12 +3095,6 @@ Moving median algorithm. Read [here](./Algorithms-for-series-processing#tldr-how
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Median_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Median_new)
 
-- SOURCE CODE
-
-```py{file="median.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3204,7 +3108,7 @@ def Main(self):
     return m[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Mfv">`Mfv`</a>
 
@@ -3220,12 +3124,6 @@ Money flow volume algorithm. Read [here](./Algorithms-for-series-processing#tldr
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Mfv_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Mfv_new)
 
-- SOURCE CODE
-
-```py{file="mfv.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3239,7 +3137,7 @@ def Main(self):
     return mfv[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_NanToZero">`NanToZero`</a>
 
@@ -3254,12 +3152,6 @@ Algorithm that replaces all `math.nan` values with zeros in a series. Read [here
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_NanToZero_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_NanToZero_new)
-
-- SOURCE CODE
-
-```py{file="nan_to_zero.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3284,7 +3176,7 @@ def Main(self):
 
 [`FixNan`](#class_alg_FixNan)
 
-—
+---
 
 ### <a name="class_alg_NetVolume">`NetVolume`</a>
 
@@ -3300,12 +3192,6 @@ Net volume algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-to
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_NetVolume_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_NetVolume_new)
 
-- SOURCE CODE
-
-```py{file="net_volume.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3319,7 +3205,7 @@ def Main(self):
     return nv[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_PercentRank">`PercentRank`</a>
 
@@ -3335,12 +3221,6 @@ Percent rank algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_PercentRank_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_PercentRank_new)
 
-- SOURCE CODE
-
-```py{file="percent_rank.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3354,7 +3234,7 @@ def Main(self):
     return pr[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Rma">`Rma`</a>
 
@@ -3370,12 +3250,6 @@ RMA algorithm is a moving average algorithm that is used to calculate RSI. Read 
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Rma_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Rma_new)
 
-- SOURCE CODE
-
-```py{file="rma.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3389,7 +3263,7 @@ def Main(self):
     return rma[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Roc">`Roc`</a>
 
@@ -3405,12 +3279,6 @@ Rate of change algorithm. Read [here](./Algorithms-for-series-processing#tldr-ho
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Roc_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Roc_new)
 
-- SOURCE CODE
-
-```py{file="roc.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3424,7 +3292,7 @@ def Main(self):
     return roc[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Rsi">`Rsi`</a>
 
@@ -3440,12 +3308,6 @@ Relative strength index algorithm. Read [here](./Algorithms-for-series-processin
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Rsi_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Rsi_new)
 
-- SOURCE CODE
-
-```py{file="rsi.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3459,7 +3321,7 @@ def Main(self):
     return rsi[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_SinceHighest">`SinceHighest`</a>
 
@@ -3474,12 +3336,6 @@ Read [here](./Algorithms-for-series-processing#tldr-how-to-use-classes-from-indi
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_SinceHighest_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_SinceHighest_new)
-
-- SOURCE CODE
-
-```py{file="since_highest.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3498,7 +3354,7 @@ def Main(self):
 
 [`Highest`](#class_alg_Highest)
 
-—
+---
 
 ### <a name="class_alg_SinceLowest">`SinceLowest`</a>
 
@@ -3513,12 +3369,6 @@ Read [here](./Algorithms-for-series-processing#tldr-how-to-use-classes-from-indi
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_SinceLowest_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_SinceLowest_new)
-
-- SOURCE CODE
-
-```py{file="since_lowest.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3537,7 +3387,7 @@ def Main(self):
 
 [`Lowest`](#class_alg_Lowest)
 
-—
+---
 
 ### <a name="class_alg_Sma">`Sma`</a>
 
@@ -3553,12 +3403,6 @@ Simple moving average algorithm. Read [here](./Algorithms-for-series-processing#
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Sma_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Sma_new)
 
-- SOURCE CODE
-
-```py{file="sma.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3572,7 +3416,7 @@ def Main(self):
     return sma[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_StdDev">`StdDev`</a>
 
@@ -3588,12 +3432,6 @@ Standard deviation algorithm. Read [here](./Algorithms-for-series-processing#tld
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_StdDev_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_StdDev_new)
 
-- SOURCE CODE
-
-```py{file="std_dev.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3607,7 +3445,7 @@ def Main(self):
     return sd[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Stoch">`Stoch`</a>
 
@@ -3623,12 +3461,6 @@ Stochastic algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-to
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Stoch_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Stoch_new)
 
-- SOURCE CODE
-
-```py{file="stoch.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3642,7 +3474,7 @@ def Main(self):
     return s[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Sum">`Sum`</a>
 
@@ -3658,12 +3490,6 @@ Sliding sum algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-t
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Sum_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Sum_new)
 
-- SOURCE CODE
-
-```py{file="sum.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3677,7 +3503,7 @@ def Main(self):
     return s[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Supertrend">`Supertrend`</a>
 
@@ -3693,12 +3519,6 @@ Supertrend algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-to
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Supertrend_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Supertrend_new)
 
-- SOURCE CODE
-
-```py{file="supertrend.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3713,7 +3533,7 @@ def Main(self):
     return Plot(st[0], color=c)
 ```
 
-—
+---
 
 ### <a name="class_alg_Tr">`Tr`</a>
 
@@ -3729,12 +3549,6 @@ True range algorithm. Read [here](./Algorithms-for-series-processing#tldr-how-to
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Tr_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Tr_new)
 
-- SOURCE CODE
-
-```py{file="tr.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3748,7 +3562,7 @@ def Main(self):
     return tr[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Tsi">`Tsi`</a>
 
@@ -3764,12 +3578,6 @@ True strength index algorithm. Read [here](./Algorithms-for-series-processing#tl
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Tsi_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Tsi_new)
 
-- SOURCE CODE
-
-```py{file="tsi.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3783,7 +3591,7 @@ def Main(self):
     return tsi[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Vwap">`Vwap`</a>
 
@@ -3799,12 +3607,6 @@ Volume weighted average price algorithm. Read [here](./Algorithms-for-series-pro
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Vwap_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Vwap_new)
 
-- SOURCE CODE
-
-```py{file="vwap.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3818,7 +3620,7 @@ def Main(self):
     return main_line[0], upper[0], lower[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Vwma">`Vwma`</a>
 
@@ -3834,12 +3636,6 @@ Volume weighted moving average algorithm. Read [here](./Algorithms-for-series-pr
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Vwma_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Vwma_new)
 
-- SOURCE CODE
-
-```py{file="vwma.i.py"}
-
-```
-
 - EXAMPLE
 
 ```py
@@ -3853,7 +3649,7 @@ def Main(self):
     return vwma[0]
 ```
 
-—
+---
 
 ### <a name="class_alg_Wma">`Wma`</a>
 
@@ -3868,12 +3664,6 @@ Weighted moving average algorithm. Read [here](./Algorithms-for-series-processin
 - MEMBERS
 
 [`__init__()`](#func_Algorithm_init) [`calc()`](#func_alg_Wma_calc) [`ctx`](#obj_Algorithm_ctx) [`new()`](#func_alg_Wma_new)
-
-- SOURCE CODE
-
-```py{file="wma.i.py"}
-
-```
 
 - EXAMPLE
 
@@ -3914,7 +3704,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Adx`](#class_alg_Adx)
 
-—
+---
 
 ### <a name="func_alg_Adx_calc">`Adx.calc()`</a>
 
@@ -3941,7 +3731,7 @@ calc(
 
 [`Adx`](#class_alg_Adx)
 
-—
+---
 
 ### <a name="func_alg_Adx_new">`Adx.new()`</a>
 
@@ -3968,7 +3758,7 @@ new(
 
 [`Adx`](#class_alg_Adx)
 
-—
+---
 
 ### <a name="func_alg_Atr_init">`Atr.__init__()`</a>
 
@@ -3990,7 +3780,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Atr`](#class_alg_Atr)
 
-—
+---
 
 ### <a name="func_alg_Atr_calc">`Atr.calc()`</a>
 
@@ -4014,7 +3804,7 @@ calc(length: int, ma_algorithm: str = "RMA") -> indie.Series[float]
 
 [`Atr`](#class_alg_Atr)
 
-—
+---
 
 ### <a name="func_alg_Atr_new">`Atr.new()`</a>
 
@@ -4038,7 +3828,7 @@ new(length: int, ma_algorithm: str = "RMA") -> indie.Series[float]
 
 [`Atr`](#class_alg_Atr)
 
-—
+---
 
 ### <a name="func_alg_Bb_init">`Bb.__init__()`</a>
 
@@ -4060,7 +3850,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Bb`](#class_alg_Bb)
 
-—
+---
 
 ### <a name="func_alg_Bb_calc">`Bb.calc()`</a>
 
@@ -4090,7 +3880,7 @@ calc(
 
 [`Bb`](#class_alg_Bb)
 
-—
+---
 
 ### <a name="func_alg_Bb_new">`Bb.new()`</a>
 
@@ -4120,7 +3910,7 @@ new(
 
 [`Bb`](#class_alg_Bb)
 
-—
+---
 
 ### <a name="func_alg_Cci_init">`Cci.__init__()`</a>
 
@@ -4142,7 +3932,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Cci`](#class_alg_Cci)
 
-—
+---
 
 ### <a name="func_alg_Cci_calc">`Cci.calc()`</a>
 
@@ -4166,7 +3956,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Cci`](#class_alg_Cci)
 
-—
+---
 
 ### <a name="func_alg_Cci_new">`Cci.new()`</a>
 
@@ -4190,7 +3980,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Cci`](#class_alg_Cci)
 
-—
+---
 
 ### <a name="func_alg_Change_init">`Change.__init__()`</a>
 
@@ -4212,7 +4002,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Change`](#class_alg_Change)
 
-—
+---
 
 ### <a name="func_alg_Change_calc">`Change.calc()`</a>
 
@@ -4236,7 +4026,7 @@ calc(src: indie.Series[float], length: int = 1) -> indie.Series[float]
 
 [`Change`](#class_alg_Change)
 
-—
+---
 
 ### <a name="func_alg_Change_new">`Change.new()`</a>
 
@@ -4260,7 +4050,7 @@ new(src: indie.Series[float], length: int = 1) -> indie.Series[float]
 
 [`Change`](#class_alg_Change)
 
-—
+---
 
 ### <a name="func_alg_Corr_init">`Corr.__init__()`</a>
 
@@ -4282,7 +4072,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Corr`](#class_alg_Corr)
 
-—
+---
 
 ### <a name="func_alg_Corr_calc">`Corr.calc()`</a>
 
@@ -4312,7 +4102,7 @@ calc(
 
 [`Corr`](#class_alg_Corr)
 
-—
+---
 
 ### <a name="func_alg_Corr_new">`Corr.new()`</a>
 
@@ -4342,7 +4132,7 @@ new(
 
 [`Corr`](#class_alg_Corr)
 
-—
+---
 
 ### <a name="func_alg_CumSum_init">`CumSum.__init__()`</a>
 
@@ -4364,7 +4154,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`CumSum`](#class_alg_CumSum)
 
-—
+---
 
 ### <a name="func_alg_CumSum_calc">`CumSum.calc()`</a>
 
@@ -4386,7 +4176,7 @@ calc(src: indie.Series[float]) -> indie.Series[float]
 
 [`CumSum`](#class_alg_CumSum)
 
-—
+---
 
 ### <a name="func_alg_CumSum_new">`CumSum.new()`</a>
 
@@ -4408,7 +4198,7 @@ new(src: indie.Series[float]) -> indie.Series[float]
 
 [`CumSum`](#class_alg_CumSum)
 
-—
+---
 
 ### <a name="func_alg_Dev_init">`Dev.__init__()`</a>
 
@@ -4430,7 +4220,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Dev`](#class_alg_Dev)
 
-—
+---
 
 ### <a name="func_alg_Dev_calc">`Dev.calc()`</a>
 
@@ -4454,7 +4244,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Dev`](#class_alg_Dev)
 
-—
+---
 
 ### <a name="func_alg_Dev_new">`Dev.new()`</a>
 
@@ -4478,7 +4268,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Dev`](#class_alg_Dev)
 
-—
+---
 
 ### <a name="func_alg_Donchian_init">`Donchian.__init__()`</a>
 
@@ -4500,7 +4290,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Donchian`](#class_alg_Donchian)
 
-—
+---
 
 ### <a name="func_alg_Donchian_calc">`Donchian.calc()`</a>
 
@@ -4522,7 +4312,7 @@ calc(length: int) -> indie.Series[float]
 
 [`Donchian`](#class_alg_Donchian)
 
-—
+---
 
 ### <a name="func_alg_Donchian_new">`Donchian.new()`</a>
 
@@ -4544,7 +4334,7 @@ new(length: int) -> indie.Series[float]
 
 [`Donchian`](#class_alg_Donchian)
 
-—
+---
 
 ### <a name="func_alg_Ema_init">`Ema.__init__()`</a>
 
@@ -4566,7 +4356,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Ema`](#class_alg_Ema)
 
-—
+---
 
 ### <a name="func_alg_Ema_calc">`Ema.calc()`</a>
 
@@ -4590,7 +4380,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Ema`](#class_alg_Ema)
 
-—
+---
 
 ### <a name="func_alg_Ema_new">`Ema.new()`</a>
 
@@ -4614,7 +4404,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Ema`](#class_alg_Ema)
 
-—
+---
 
 ### <a name="func_alg_FixNan_init">`FixNan.__init__()`</a>
 
@@ -4636,7 +4426,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`NanToZero.new()`](#func_alg_NanToZero_new) [`FixNan`](#class_alg_FixNan)
 
-—
+---
 
 ### <a name="func_alg_FixNan_calc">`FixNan.calc()`</a>
 
@@ -4658,7 +4448,7 @@ calc(src: indie.Series[float]) -> indie.Series[float]
 
 [`NanToZero.calc()`](#func_alg_NanToZero_calc) [`FixNan`](#class_alg_FixNan)
 
-—
+---
 
 ### <a name="func_alg_FixNan_new">`FixNan.new()`</a>
 
@@ -4680,7 +4470,7 @@ new(src: indie.Series[float]) -> indie.Series[float]
 
 [`NanToZero.new()`](#func_alg_NanToZero_new) [`FixNan`](#class_alg_FixNan)
 
-—
+---
 
 ### <a name="func_alg_Highest_init">`Highest.__init__()`</a>
 
@@ -4702,7 +4492,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`SinceHighest.new()`](#func_alg_SinceHighest_new) [`Highest`](#class_alg_Highest)
 
-—
+---
 
 ### <a name="func_alg_Highest_calc">`Highest.calc()`</a>
 
@@ -4726,7 +4516,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`SinceHighest.calc()`](#func_alg_SinceHighest_calc) [`Highest`](#class_alg_Highest)
 
-—
+---
 
 ### <a name="func_alg_Highest_new">`Highest.new()`</a>
 
@@ -4750,7 +4540,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`SinceHighest.new()`](#func_alg_SinceHighest_new) [`Highest`](#class_alg_Highest)
 
-—
+---
 
 ### <a name="func_alg_LinReg_init">`LinReg.__init__()`</a>
 
@@ -4772,7 +4562,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`LinReg`](#class_alg_LinReg)
 
-—
+---
 
 ### <a name="func_alg_LinReg_calc">`LinReg.calc()`</a>
 
@@ -4802,7 +4592,7 @@ calc(
 
 [`LinReg`](#class_alg_LinReg)
 
-—
+---
 
 ### <a name="func_alg_LinReg_new">`LinReg.new()`</a>
 
@@ -4832,7 +4622,7 @@ new(
 
 [`LinReg`](#class_alg_LinReg)
 
-—
+---
 
 ### <a name="func_alg_Lowest_init">`Lowest.__init__()`</a>
 
@@ -4854,7 +4644,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`SinceLowest.new()`](#func_alg_SinceLowest_new) [`Lowest`](#class_alg_Lowest)
 
-—
+---
 
 ### <a name="func_alg_Lowest_calc">`Lowest.calc()`</a>
 
@@ -4878,7 +4668,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`SinceLowest.calc()`](#func_alg_SinceLowest_calc) [`Lowest`](#class_alg_Lowest)
 
-—
+---
 
 ### <a name="func_alg_Lowest_new">`Lowest.new()`</a>
 
@@ -4902,7 +4692,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`SinceLowest.new()`](#func_alg_SinceLowest_new) [`Lowest`](#class_alg_Lowest)
 
-—
+---
 
 ### <a name="func_alg_Ma_init">`Ma.__init__()`</a>
 
@@ -4924,7 +4714,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Ma`](#class_alg_Ma)
 
-—
+---
 
 ### <a name="func_alg_Ma_calc">`Ma.calc()`</a>
 
@@ -4954,7 +4744,7 @@ calc(
 
 [`Ma`](#class_alg_Ma)
 
-—
+---
 
 ### <a name="func_alg_Ma_new">`Ma.new()`</a>
 
@@ -4984,7 +4774,7 @@ new(
 
 [`Ma`](#class_alg_Ma)
 
-—
+---
 
 ### <a name="func_alg_Median_init">`Median.__init__()`</a>
 
@@ -5006,7 +4796,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Median`](#class_alg_Median)
 
-—
+---
 
 ### <a name="func_alg_Median_calc">`Median.calc()`</a>
 
@@ -5030,7 +4820,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Median`](#class_alg_Median)
 
-—
+---
 
 ### <a name="func_alg_Median_new">`Median.new()`</a>
 
@@ -5054,7 +4844,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Median`](#class_alg_Median)
 
-—
+---
 
 ### <a name="func_alg_Mfv_init">`Mfv.__init__()`</a>
 
@@ -5076,7 +4866,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Mfv`](#class_alg_Mfv)
 
-—
+---
 
 ### <a name="func_alg_Mfv_calc">`Mfv.calc()`</a>
 
@@ -5094,7 +4884,7 @@ calc() -> indie.Series[float]
 
 [`Mfv`](#class_alg_Mfv)
 
-—
+---
 
 ### <a name="func_alg_Mfv_new">`Mfv.new()`</a>
 
@@ -5112,7 +4902,7 @@ new() -> indie.Series[float]
 
 [`Mfv`](#class_alg_Mfv)
 
-—
+---
 
 ### <a name="func_alg_NanToZero_init">`NanToZero.__init__()`</a>
 
@@ -5134,7 +4924,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`FixNan.new()`](#func_alg_FixNan_new) [`NanToZero`](#class_alg_NanToZero)
 
-—
+---
 
 ### <a name="func_alg_NanToZero_calc">`NanToZero.calc()`</a>
 
@@ -5156,7 +4946,7 @@ calc(src: indie.Series[float]) -> indie.Series[float]
 
 [`FixNan.calc()`](#func_alg_FixNan_calc) [`NanToZero`](#class_alg_NanToZero)
 
-—
+---
 
 ### <a name="func_alg_NanToZero_new">`NanToZero.new()`</a>
 
@@ -5178,7 +4968,7 @@ new(src: indie.Series[float]) -> indie.Series[float]
 
 [`FixNan.new()`](#func_alg_FixNan_new) [`NanToZero`](#class_alg_NanToZero)
 
-—
+---
 
 ### <a name="func_alg_NetVolume_init">`NetVolume.__init__()`</a>
 
@@ -5200,7 +4990,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`NetVolume`](#class_alg_NetVolume)
 
-—
+---
 
 ### <a name="func_alg_NetVolume_calc">`NetVolume.calc()`</a>
 
@@ -5222,7 +5012,7 @@ calc(src: indie.Series[float]) -> indie.Series[float]
 
 [`NetVolume`](#class_alg_NetVolume)
 
-—
+---
 
 ### <a name="func_alg_NetVolume_new">`NetVolume.new()`</a>
 
@@ -5244,7 +5034,7 @@ new(src: indie.Series[float]) -> indie.Series[float]
 
 [`NetVolume`](#class_alg_NetVolume)
 
-—
+---
 
 ### <a name="func_alg_PercentRank_init">`PercentRank.__init__()`</a>
 
@@ -5266,7 +5056,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`PercentRank`](#class_alg_PercentRank)
 
-—
+---
 
 ### <a name="func_alg_PercentRank_calc">`PercentRank.calc()`</a>
 
@@ -5290,7 +5080,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`PercentRank`](#class_alg_PercentRank)
 
-—
+---
 
 ### <a name="func_alg_PercentRank_new">`PercentRank.new()`</a>
 
@@ -5314,7 +5104,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`PercentRank`](#class_alg_PercentRank)
 
-—
+---
 
 ### <a name="func_alg_Rma_init">`Rma.__init__()`</a>
 
@@ -5336,7 +5126,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Rma`](#class_alg_Rma)
 
-—
+---
 
 ### <a name="func_alg_Rma_calc">`Rma.calc()`</a>
 
@@ -5360,7 +5150,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Rma`](#class_alg_Rma)
 
-—
+---
 
 ### <a name="func_alg_Rma_new">`Rma.new()`</a>
 
@@ -5384,7 +5174,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Rma`](#class_alg_Rma)
 
-—
+---
 
 ### <a name="func_alg_Roc_init">`Roc.__init__()`</a>
 
@@ -5406,7 +5196,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Roc`](#class_alg_Roc)
 
-—
+---
 
 ### <a name="func_alg_Roc_calc">`Roc.calc()`</a>
 
@@ -5430,7 +5220,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Roc`](#class_alg_Roc)
 
-—
+---
 
 ### <a name="func_alg_Roc_new">`Roc.new()`</a>
 
@@ -5454,7 +5244,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Roc`](#class_alg_Roc)
 
-—
+---
 
 ### <a name="func_alg_Rsi_init">`Rsi.__init__()`</a>
 
@@ -5476,7 +5266,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Rsi`](#class_alg_Rsi)
 
-—
+---
 
 ### <a name="func_alg_Rsi_calc">`Rsi.calc()`</a>
 
@@ -5500,7 +5290,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Rsi`](#class_alg_Rsi)
 
-—
+---
 
 ### <a name="func_alg_Rsi_new">`Rsi.new()`</a>
 
@@ -5524,7 +5314,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Rsi`](#class_alg_Rsi)
 
-—
+---
 
 ### <a name="func_alg_SinceHighest_init">`SinceHighest.__init__()`</a>
 
@@ -5546,7 +5336,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Highest.new()`](#func_alg_Highest_new) [`SinceHighest`](#class_alg_SinceHighest)
 
-—
+---
 
 ### <a name="func_alg_SinceHighest_calc">`SinceHighest.calc()`</a>
 
@@ -5570,7 +5360,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Highest.calc()`](#func_alg_Highest_calc) [`SinceHighest`](#class_alg_SinceHighest)
 
-—
+---
 
 ### <a name="func_alg_SinceHighest_new">`SinceHighest.new()`</a>
 
@@ -5594,7 +5384,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Highest.new()`](#func_alg_Highest_new) [`SinceHighest`](#class_alg_SinceHighest)
 
-—
+---
 
 ### <a name="func_alg_SinceLowest_init">`SinceLowest.__init__()`</a>
 
@@ -5616,7 +5406,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Lowest.new()`](#func_alg_Lowest_new) [`SinceLowest`](#class_alg_SinceLowest)
 
-—
+---
 
 ### <a name="func_alg_SinceLowest_calc">`SinceLowest.calc()`</a>
 
@@ -5640,7 +5430,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Lowest.calc()`](#func_alg_Lowest_calc) [`SinceLowest`](#class_alg_SinceLowest)
 
-—
+---
 
 ### <a name="func_alg_SinceLowest_new">`SinceLowest.new()`</a>
 
@@ -5664,7 +5454,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Lowest.new()`](#func_alg_Lowest_new) [`SinceLowest`](#class_alg_SinceLowest)
 
-—
+---
 
 ### <a name="func_alg_Sma_init">`Sma.__init__()`</a>
 
@@ -5686,7 +5476,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Sma`](#class_alg_Sma)
 
-—
+---
 
 ### <a name="func_alg_Sma_calc">`Sma.calc()`</a>
 
@@ -5710,7 +5500,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Sma`](#class_alg_Sma)
 
-—
+---
 
 ### <a name="func_alg_Sma_new">`Sma.new()`</a>
 
@@ -5734,7 +5524,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Sma`](#class_alg_Sma)
 
-—
+---
 
 ### <a name="func_alg_StdDev_init">`StdDev.__init__()`</a>
 
@@ -5756,7 +5546,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`StdDev`](#class_alg_StdDev)
 
-—
+---
 
 ### <a name="func_alg_StdDev_calc">`StdDev.calc()`</a>
 
@@ -5780,7 +5570,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`StdDev`](#class_alg_StdDev)
 
-—
+---
 
 ### <a name="func_alg_StdDev_new">`StdDev.new()`</a>
 
@@ -5804,7 +5594,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`StdDev`](#class_alg_StdDev)
 
-—
+---
 
 ### <a name="func_alg_Stoch_init">`Stoch.__init__()`</a>
 
@@ -5826,7 +5616,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Stoch`](#class_alg_Stoch)
 
-—
+---
 
 ### <a name="func_alg_Stoch_calc">`Stoch.calc()`</a>
 
@@ -5859,7 +5649,7 @@ calc(
 
 [`Stoch`](#class_alg_Stoch)
 
-—
+---
 
 ### <a name="func_alg_Stoch_new">`Stoch.new()`</a>
 
@@ -5892,7 +5682,7 @@ new(
 
 [`Stoch`](#class_alg_Stoch)
 
-—
+---
 
 ### <a name="func_alg_Sum_init">`Sum.__init__()`</a>
 
@@ -5914,7 +5704,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Sum`](#class_alg_Sum)
 
-—
+---
 
 ### <a name="func_alg_Sum_calc">`Sum.calc()`</a>
 
@@ -5938,7 +5728,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Sum`](#class_alg_Sum)
 
-—
+---
 
 ### <a name="func_alg_Sum_new">`Sum.new()`</a>
 
@@ -5962,7 +5752,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Sum`](#class_alg_Sum)
 
-—
+---
 
 ### <a name="func_alg_Supertrend_init">`Supertrend.__init__()`</a>
 
@@ -5984,7 +5774,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Supertrend`](#class_alg_Supertrend)
 
-—
+---
 
 ### <a name="func_alg_Supertrend_calc">`Supertrend.calc()`</a>
 
@@ -6014,7 +5804,7 @@ calc(
 
 [`Supertrend`](#class_alg_Supertrend)
 
-—
+---
 
 ### <a name="func_alg_Supertrend_new">`Supertrend.new()`</a>
 
@@ -6044,7 +5834,7 @@ new(
 
 [`Supertrend`](#class_alg_Supertrend)
 
-—
+---
 
 ### <a name="func_alg_Tr_init">`Tr.__init__()`</a>
 
@@ -6066,7 +5856,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Tr`](#class_alg_Tr)
 
-—
+---
 
 ### <a name="func_alg_Tr_calc">`Tr.calc()`</a>
 
@@ -6088,7 +5878,7 @@ calc(handle_na: bool = False) -> indie.Series[float]
 
 [`Tr`](#class_alg_Tr)
 
-—
+---
 
 ### <a name="func_alg_Tr_new">`Tr.new()`</a>
 
@@ -6110,7 +5900,7 @@ new(handle_na: bool = False) -> indie.Series[float]
 
 [`Tr`](#class_alg_Tr)
 
-—
+---
 
 ### <a name="func_alg_Tsi_init">`Tsi.__init__()`</a>
 
@@ -6132,7 +5922,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Tsi`](#class_alg_Tsi)
 
-—
+---
 
 ### <a name="func_alg_Tsi_calc">`Tsi.calc()`</a>
 
@@ -6162,7 +5952,7 @@ calc(
 
 [`Tsi`](#class_alg_Tsi)
 
-—
+---
 
 ### <a name="func_alg_Tsi_new">`Tsi.new()`</a>
 
@@ -6192,7 +5982,7 @@ new(
 
 [`Tsi`](#class_alg_Tsi)
 
-—
+---
 
 ### <a name="func_alg_Vwap_init">`Vwap.__init__()`</a>
 
@@ -6214,7 +6004,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Vwap`](#class_alg_Vwap)
 
-—
+---
 
 ### <a name="func_alg_Vwap_calc">`Vwap.calc()`</a>
 
@@ -6244,7 +6034,7 @@ calc(
 
 [`Vwap`](#class_alg_Vwap)
 
-—
+---
 
 ### <a name="func_alg_Vwap_new">`Vwap.new()`</a>
 
@@ -6274,7 +6064,7 @@ new(
 
 [`Vwap`](#class_alg_Vwap)
 
-—
+---
 
 ### <a name="func_alg_Vwma_init">`Vwma.__init__()`</a>
 
@@ -6296,7 +6086,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Vwma`](#class_alg_Vwma)
 
-—
+---
 
 ### <a name="func_alg_Vwma_calc">`Vwma.calc()`</a>
 
@@ -6320,7 +6110,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Vwma`](#class_alg_Vwma)
 
-—
+---
 
 ### <a name="func_alg_Vwma_new">`Vwma.new()`</a>
 
@@ -6344,7 +6134,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Vwma`](#class_alg_Vwma)
 
-—
+---
 
 ### <a name="func_alg_Wma_init">`Wma.__init__()`</a>
 
@@ -6366,7 +6156,7 @@ __init__(ctx: indie.Context) -> NoneType
 
 [`Wma`](#class_alg_Wma)
 
-—
+---
 
 ### <a name="func_alg_Wma_calc">`Wma.calc()`</a>
 
@@ -6390,7 +6180,7 @@ calc(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Wma`](#class_alg_Wma)
 
-—
+---
 
 ### <a name="func_alg_Wma_new">`Wma.new()`</a>
 
@@ -6414,7 +6204,7 @@ new(src: indie.Series[float], length: int) -> indie.Series[float]
 
 [`Wma`](#class_alg_Wma)
 
-—
+---
 
 # Package <a name="pkg_color">`indie.color`</a>
 
@@ -6472,7 +6262,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_BLACK">`BLACK`</a>
 
@@ -6484,7 +6274,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_BLUE">`BLUE`</a>
 
@@ -6496,7 +6286,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_FUCHSIA">`FUCHSIA`</a>
 
@@ -6508,7 +6298,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_GRAY">`GRAY`</a>
 
@@ -6520,7 +6310,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_GREEN">`GREEN`</a>
 
@@ -6532,7 +6322,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_LIME">`LIME`</a>
 
@@ -6544,7 +6334,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_MAROON">`MAROON`</a>
 
@@ -6556,7 +6346,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_NAVY">`NAVY`</a>
 
@@ -6568,7 +6358,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_OLIVE">`OLIVE`</a>
 
@@ -6580,7 +6370,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_PURPLE">`PURPLE`</a>
 
@@ -6592,7 +6382,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_RED">`RED`</a>
 
@@ -6604,7 +6394,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_SILVER">`SILVER`</a>
 
@@ -6616,7 +6406,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_TEAL">`TEAL`</a>
 
@@ -6628,7 +6418,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_WHITE">`WHITE`</a>
 
@@ -6640,7 +6430,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 ### <a name="obj_color_YELLOW">`YELLOW`</a>
 
@@ -6652,7 +6442,7 @@ Built-in color.
 
 [`Color`](#interface_Color)
 
-—
+---
 
 # Package <a name="pkg_schedule">`indie.schedule`</a>
 
@@ -6682,7 +6472,7 @@ Data type that manages a collection of scheduling rules, allowing for specific t
 
 [`ScheduleRule`](#class_ScheduleRule)
 
-—
+---
 
 ### <a name="class_ScheduleRule">`ScheduleRule`</a>
 
@@ -6711,7 +6501,7 @@ For rules that span overnight (e.g., from 10:00 PM to 6:00 AM), the end time sho
 
 [`Schedule`](#class_Schedule)
 
-—
+---
 
 ### <a name="class_WeekDay">`WeekDay`</a>
 
@@ -6755,7 +6545,7 @@ __contains__(datetime.datetime) -> bool
 
 [`Schedule`](#class_Schedule)
 
-—
+---
 
 ### <a name="func_Schedule_init">`Schedule.__init__()`</a>
 
@@ -6788,7 +6578,7 @@ __init__(
 
 [`Schedule`](#class_Schedule)
 
-—
+---
 
 ### <a name="func_Schedule_is_empty">`Schedule.is_empty()`</a>
 
@@ -6806,7 +6596,7 @@ is_empty() -> bool
 
 [`Schedule`](#class_Schedule)
 
-—
+---
 
 ### <a name="func_Schedule_is_same_period">`Schedule.is_same_period()`</a>
 
@@ -6834,7 +6624,7 @@ This method checks if two timestamps, which may belong to different calendar day
 
 [`Schedule`](#class_Schedule)
 
-—
+---
 
 ### <a name="func_ScheduleRule_init">`ScheduleRule.__init__()`</a>
 
@@ -6864,7 +6654,7 @@ __init__(
 
 [`ScheduleRule`](#class_ScheduleRule)
 
-—
+---
 
 ### <a name="func_TradingSession_contains">`TradingSession.__contains__()`</a>
 
@@ -6892,7 +6682,7 @@ __contains__(datetime.datetime) -> bool
 
 [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_TradingSession_is_after_hours">`TradingSession.is_after_hours()`</a>
 
@@ -6914,7 +6704,7 @@ is_after_hours(timestamp: float) -> bool
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_TradingSession_is_extended">`TradingSession.is_extended()`</a>
 
@@ -6940,7 +6730,7 @@ Returns `True` if the provided timestamp falls within either the pre-market or a
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_TradingSession_is_pre_market">`TradingSession.is_pre_market()`</a>
 
@@ -6962,7 +6752,7 @@ is_pre_market(timestamp: float) -> bool
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_TradingSession_is_regular">`TradingSession.is_regular()`</a>
 
@@ -6984,7 +6774,7 @@ is_regular(timestamp: float) -> bool
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="func_TradingSession_is_same_period">`TradingSession.is_same_period()`</a>
 
@@ -7028,7 +6818,7 @@ List of `WeekDay`'s from WeekDay.MONDAY to WeekDay.SUNDA.
 
 [`list[int]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="obj_TradingSession_after_hours">`TradingSession.after_hours`</a>
 
@@ -7044,7 +6834,7 @@ Schedule instance that defines the rules and exceptions for the after-hours trad
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="obj_TradingSession_extended">`TradingSession.extended`</a>
 
@@ -7060,7 +6850,7 @@ Schedule instance that defines the rules and exceptions for the extended session
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="obj_TradingSession_pre_market">`TradingSession.pre_market`</a>
 
@@ -7076,7 +6866,7 @@ Schedule instance that defines the rules and exceptions for the pre-market tradi
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="obj_TradingSession_regular">`TradingSession.regular`</a>
 
@@ -7092,7 +6882,7 @@ Schedule instance that defines the rules and exceptions for the regular trading 
 
 [`Context`](#class_Context) [`Schedule`](#class_Schedule) [`TradingSession`](#class_TradingSession)
 
-—
+---
 
 ### <a name="obj_schedule_WEEKEND">`WEEKEND`</a>
 
@@ -7104,7 +6894,7 @@ List of `WeekDay`'s from WeekDay.SATURDAY to WeekDay.SUNDA.
 
 [`list[int]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="obj_schedule_WORKDAYS">`WORKDAYS`</a>
 
@@ -7116,7 +6906,7 @@ List of `WeekDay`'s from WeekDay.MONDAY to WeekDay.FRIDA.
 
 [`list[int]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="obj_WeekDay_FRIDAY">`WeekDay.FRIDAY`</a>
 
@@ -7132,7 +6922,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_MONDAY">`WeekDay.MONDAY`</a>
 
@@ -7148,7 +6938,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_SATURDAY">`WeekDay.SATURDAY`</a>
 
@@ -7164,7 +6954,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_SUNDAY">`WeekDay.SUNDAY`</a>
 
@@ -7180,7 +6970,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_THURSDAY">`WeekDay.THURSDAY`</a>
 
@@ -7196,7 +6986,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_TUESDAY">`WeekDay.TUESDAY`</a>
 
@@ -7212,7 +7002,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 ### <a name="obj_WeekDay_WEDNESDAY">`WeekDay.WEDNESDAY`</a>
 
@@ -7228,7 +7018,7 @@ Built-in constants that represent days of week.
 
 [`WeekDay`](#class_WeekDay)
 
-—
+---
 
 # Package <a name="pkg_math">`math`</a>
 
@@ -7264,7 +7054,7 @@ acos(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_asin">`asin()`</a>
 
@@ -7282,7 +7072,7 @@ asin(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_atan">`atan()`</a>
 
@@ -7300,7 +7090,7 @@ atan(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_ceil">`ceil()`</a>
 
@@ -7318,7 +7108,7 @@ ceil(float) -> int
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_cos">`cos()`</a>
 
@@ -7336,7 +7126,7 @@ cos(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_exp">`exp()`</a>
 
@@ -7354,7 +7144,7 @@ exp(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_exp2">`exp2()`</a>
 
@@ -7372,7 +7162,7 @@ exp2(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_floor">`floor()`</a>
 
@@ -7390,7 +7180,7 @@ floor(float) -> int
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_isclose">`isclose()`</a>
 
@@ -7414,7 +7204,7 @@ isclose(float, float, rel_tol: float = 1e-9, abs_tol: float = 0.0) -> bool
 
   - `abs_tol` — Absolute tolerance for proximity check.
 
-—
+---
 
 ### <a name="func_math_isnan">`isnan()`</a>
 
@@ -7432,7 +7222,7 @@ isnan(float) -> bool
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_log">`log()`</a>
 
@@ -7450,7 +7240,7 @@ log(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_log10">`log10()`</a>
 
@@ -7468,7 +7258,7 @@ log10(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_log2">`log2()`</a>
 
@@ -7486,7 +7276,7 @@ log2(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_pow">`pow()`</a>
 
@@ -7506,7 +7296,7 @@ pow(float, float) -> float
 
   - `<unnamed param>` — Exponent (power) value to calculate exponentiation.
 
-—
+---
 
 ### <a name="func_math_sin">`sin()`</a>
 
@@ -7524,7 +7314,7 @@ sin(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_sqrt">`sqrt()`</a>
 
@@ -7542,7 +7332,7 @@ sqrt(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_math_tan">`tan()`</a>
 
@@ -7576,7 +7366,7 @@ Standard constant of Indie math package (similar to Python's).
 
 [`float`](#class_builtin_float)
 
-—
+---
 
 ### <a name="obj_math_nan">`nan`</a>
 
@@ -7588,7 +7378,7 @@ Standard constant of Indie math package (similar to Python's).
 
 [`float`](#class_builtin_float)
 
-—
+---
 
 ### <a name="obj_math_pi">`pi`</a>
 
@@ -7600,7 +7390,7 @@ Standard constant of Indie math package (similar to Python's).
 
 [`float`](#class_builtin_float)
 
-—
+---
 
 # Package <a name="pkg_statistics">`statistics`</a>
 
@@ -7636,7 +7426,7 @@ fmean(data: list[float]) -> float
 
   - `data` — List on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_statistics_mean">`mean()`</a>
 
@@ -7658,7 +7448,7 @@ mean(data: list[int]) -> float
 
   - `data` — List on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_statistics_median">`median()`</a>
 
@@ -7676,7 +7466,7 @@ median(data: list[float]) -> float
 
   - `data` — List on which the function will be calculated.
 
-—
+---
 
 # Package <a name="pkg_datetime">`datetime`</a>
 
@@ -7710,7 +7500,7 @@ Represents date and time information.
 
 [`timedelta`](#class_timedelta) [`time`](#class_time)
 
-—
+---
 
 ### <a name="class_time">`time`</a>
 
@@ -7726,7 +7516,7 @@ Represents a time of day, independent of any particular day.
 
 [`datetime`](#class_datetime) [`timedelta`](#class_timedelta)
 
-—
+---
 
 ### <a name="class_timedelta">`timedelta`</a>
 
@@ -7768,7 +7558,7 @@ __add__(delta: datetime.timedelta) -> datetime.datetime
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="func_datetime_init">`datetime.__init__()`</a>
 
@@ -7810,7 +7600,7 @@ __init__(
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="func_datetime_sub">`datetime.__sub__()`</a>
 
@@ -7838,7 +7628,7 @@ __sub__(other: datetime.datetime) -> datetime.timedelta
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="func_datetime_utcfromtimestamp">`datetime.utcfromtimestamp()`</a>
 
@@ -7860,7 +7650,7 @@ utcfromtimestamp(timestamp: float) -> datetime.datetime
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="func_datetime_weekday">`datetime.weekday()`</a>
 
@@ -7878,7 +7668,7 @@ weekday() -> int
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="func_time_add">`time.__add__()`</a>
 
@@ -7900,7 +7690,7 @@ __add__(delta: datetime.timedelta) -> datetime.datetime
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="func_time_init">`time.__init__()`</a>
 
@@ -7933,7 +7723,7 @@ __init__(
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="func_time_sub">`time.__sub__()`</a>
 
@@ -7955,7 +7745,7 @@ __sub__(delta: datetime.timedelta) -> datetime.datetime
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="func_timedelta_init">`timedelta.__init__()`</a>
 
@@ -7997,7 +7787,7 @@ __init__(
 
 [`timedelta`](#class_timedelta)
 
-—
+---
 
 ### <a name="func_timedelta_total_seconds">`timedelta.total_seconds()`</a>
 
@@ -8035,7 +7825,7 @@ The day value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_hour">`datetime.hour`</a>
 
@@ -8051,7 +7841,7 @@ The hour value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_microsecond">`datetime.microsecond`</a>
 
@@ -8067,7 +7857,7 @@ The microsecond value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_minute">`datetime.minute`</a>
 
@@ -8083,7 +7873,7 @@ The minute value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_month">`datetime.month`</a>
 
@@ -8099,7 +7889,7 @@ The month value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_second">`datetime.second`</a>
 
@@ -8115,7 +7905,7 @@ The second value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_datetime_year">`datetime.year`</a>
 
@@ -8131,7 +7921,7 @@ The year value of the datetime object.
 
 [`datetime`](#class_datetime)
 
-—
+---
 
 ### <a name="obj_time_hour">`time.hour`</a>
 
@@ -8147,7 +7937,7 @@ The hour value of the time object.
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="obj_time_microsecond">`time.microsecond`</a>
 
@@ -8163,7 +7953,7 @@ The microsecond value of the time object.
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="obj_time_minute">`time.minute`</a>
 
@@ -8179,7 +7969,7 @@ The minute value of the time object.
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="obj_time_second">`time.second`</a>
 
@@ -8195,7 +7985,7 @@ The second value of the time object.
 
 [`time`](#class_time)
 
-—
+---
 
 ### <a name="obj_timedelta_days">`timedelta.days`</a>
 
@@ -8211,7 +8001,7 @@ The days value of the timedelta object.
 
 [`timedelta`](#class_timedelta)
 
-—
+---
 
 ### <a name="obj_timedelta_microseconds">`timedelta.microseconds`</a>
 
@@ -8227,7 +8017,7 @@ The microseconds value of the timedelta object.
 
 [`timedelta`](#class_timedelta)
 
-—
+---
 
 ### <a name="obj_timedelta_seconds">`timedelta.seconds`</a>
 
@@ -8257,7 +8047,7 @@ _type_
 
 Builtin Indie type (similar to Python's `None` type).
 
-—
+---
 
 ### <a name="class_builtin_bool">`bool`</a>
 
@@ -8269,7 +8059,7 @@ Built-in Indie type (similar to Python's).
 
 [`__init__()`](#func_builtin_init_bool)
 
-—
+---
 
 ### <a name="class_builtin_dict">`dict[K, V]`</a>
 
@@ -8277,7 +8067,7 @@ _type_
 
 Built-in Indie type (similar to Python's).
 
-—
+---
 
 ### <a name="class_builtin_float">`float`</a>
 
@@ -8289,7 +8079,7 @@ Built-in Indie type (similar to Python's).
 
 [`__init__()`](#func_builtin_init_float)
 
-—
+---
 
 ### <a name="class_builtin_int">`int`</a>
 
@@ -8301,7 +8091,7 @@ Built-in Indie type (similar to Python's).
 
 [`__init__()`](#func_builtin_init_int)
 
-—
+---
 
 ### <a name="class_builtin_list">`list[T]`</a>
 
@@ -8333,7 +8123,7 @@ l = e[5::-1]  # `l` is `[5, 4, 3, 2, 1, 0]`
 m = e[::-1]  # `m` is `[7, 6, 5, 4, 3, 2, 1, 0]`
 ```
 
-—
+---
 
 ### <a name="class_builtin_str">`str`</a>
 
@@ -8345,7 +8135,7 @@ Built-in Indie type (similar to Python's).
 
 [`__add__()`](#func_builtin_str_add) [`__contains__()`](#func_builtin_str_contains) [`__init__()`](#func_builtin_init_str) [`__len__()`](#func_builtin_str_len) [`__mul__()`](#func_builtin_str_mul)
 
-—
+---
 
 ### <a name="class_builtin_tuple">`tuple[...]`</a>
 
@@ -8386,7 +8176,7 @@ Method `__isnone__` should never be called directly, instead `val is None` synta
 
 [`Optional[T]`](#class_Optional)
 
-—
+---
 
 ### <a name="func_builtin_abs">`abs()`</a>
 
@@ -8408,7 +8198,7 @@ abs(float) -> float
 
   - `<unnamed param>` — Number on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_builtin_init_bool">`bool.__init__()`</a>
 
@@ -8462,7 +8252,7 @@ __init__(indie.Optional[str]) -> NoneType
 
 [`bool`](#class_builtin_bool)
 
-—
+---
 
 ### <a name="func_builtin_init_float">`float.__init__()`</a>
 
@@ -8496,7 +8286,7 @@ __init__(bool) -> NoneType
 
 [`float`](#class_builtin_float)
 
-—
+---
 
 ### <a name="func_builtin_init_int">`int.__init__()`</a>
 
@@ -8530,7 +8320,7 @@ __init__(bool) -> NoneType
 
 [`int`](#class_builtin_int)
 
-—
+---
 
 ### <a name="func_builtin_len">`len()`</a>
 
@@ -8548,7 +8338,7 @@ len(typing.Any) -> int
 
   - `<unnamed param>` — String on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_builtin_list_add">`list[T].__add__()`</a>
 
@@ -8582,7 +8372,7 @@ Method `__add__` should never be called directly, instead `list1 + list2` syntax
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_bool">`list[T].__bool__()`</a>
 
@@ -8600,7 +8390,7 @@ __bool__() -> bool
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_contains">`list[T].__contains__()`</a>
 
@@ -8633,7 +8423,7 @@ Method `__contains__` should never be called directly, instead `val in lst` synt
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_delitem">`list[T].__delitem__()`</a>
 
@@ -8666,7 +8456,7 @@ Method `__delitem__` should never be called directly, instead `del list_obj[key]
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_delslice">`list[T].__delslice__()`</a>
 
@@ -8707,7 +8497,7 @@ Method `__delslice__` should never be called directly, instead `del list_obj[sli
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_getitem">`list[T].__getitem__()`</a>
 
@@ -8740,7 +8530,7 @@ Method `__getitem__` should never be called directly, instead `list_obj[key]` sy
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_getslice">`list[T].__getslice__()`</a>
 
@@ -8781,7 +8571,7 @@ Method `__getslice__` should never be called directly, instead `list_obj[slice]`
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_len">`list[T].__len__()`</a>
 
@@ -8810,7 +8600,7 @@ Method `__len__` should never be called directly, instead `len(list_obj)` syntax
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_mul">`list[T].__mul__()`</a>
 
@@ -8844,7 +8634,7 @@ Method `__mul__` should never be called directly, instead `lst * n` syntax shoul
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_setitem">`list[T].__setitem__()`</a>
 
@@ -8880,7 +8670,7 @@ Method `__setitem__` should never be called directly, instead `list_obj[key] = v
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_setslice">`list[T].__setslice__()`</a>
 
@@ -8925,7 +8715,7 @@ Method `__setslice__` should never be called directly, instead `list_obj[slice] 
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_append">`list[T].append()`</a>
 
@@ -8947,7 +8737,7 @@ append(T) -> NoneType
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_clear">`list[T].clear()`</a>
 
@@ -8972,7 +8762,7 @@ nums.clear()  # now `nums` is []
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_copy">`list[T].copy()`</a>
 
@@ -8990,7 +8780,7 @@ copy() -> list[T]
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_extend">`list[T].extend()`</a>
 
@@ -9012,7 +8802,7 @@ extend(list[T]) -> NoneType
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_index">`list[T].index()`</a>
 
@@ -9034,7 +8824,7 @@ index(T) -> int
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_insert">`list[T].insert()`</a>
 
@@ -9065,7 +8855,7 @@ nums.insert(2, 50)  # now `nums` are [40, 41, 50, 42, 43]
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_pop">`list[T].pop()`</a>
 
@@ -9090,7 +8880,7 @@ meaning_of_life = nums.pop(2)  # now `nums` are [40, 41, 43], `meaning_of_life` 
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_remove">`list[T].remove()`</a>
 
@@ -9119,7 +8909,7 @@ nums.remove(42)  # now `nums` are [40, 41, 40, 41, 42]
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_list_reverse">`list[T].reverse()`</a>
 
@@ -9137,7 +8927,7 @@ reverse() -> NoneType
 
 [`list[T]`](#class_builtin_list)
 
-—
+---
 
 ### <a name="func_builtin_max">`max()`</a>
 
@@ -9181,7 +8971,7 @@ max(list[float]) -> float
 
   - `<unnamed param>` — List on which the function will be calculated.
 
-—
+---
 
 ### <a name="func_builtin_min">`min()`</a>
 
@@ -9215,7 +9005,7 @@ min(float, float, float) -> float
 
   - `<unnamed param>` — Third number to calculate the function.
 
-—
+---
 
 ### <a name="func_builtin_range">`range()`</a>
 
@@ -9253,7 +9043,7 @@ for i in range(10):
 
 The behavior of this function is similar to Python's 2 built-in function `range` and is ineffective. This will be fixed in future versions of Indie.
 
-—
+---
 
 ### <a name="func_builtin_round">`round()`</a>
 
@@ -9277,7 +9067,7 @@ round(number: float, ndigits: indie.Optional[int] = None) -> float
 
   - `ndigits` — Rounding precision.
 
-—
+---
 
 ### <a name="func_builtin_str_add">`str.__add__()`</a>
 
@@ -9311,7 +9101,7 @@ Method `__add__` should never be called directly, instead `str1 + str2` syntax s
 
 [`str`](#class_builtin_str)
 
-—
+---
 
 ### <a name="func_builtin_str_contains">`str.__contains__()`</a>
 
@@ -9343,7 +9133,7 @@ Method `__contains__` should never be called directly, instead `str1 in str2` sy
 
 [`str`](#class_builtin_str)
 
-—
+---
 
 ### <a name="func_builtin_init_str">`str.__init__()`</a>
 
@@ -9377,7 +9167,7 @@ __init__(bool) -> NoneType
 
 [`str`](#class_builtin_str)
 
-—
+---
 
 ### <a name="func_builtin_str_len">`str.__len__()`</a>
 
@@ -9406,7 +9196,7 @@ Method `__len__` should never be called directly, instead `len(str_obj)` syntax 
 
 [`str`](#class_builtin_str)
 
-—
+---
 
 ### <a name="func_builtin_str_mul">`str.__mul__()`</a>
 
@@ -9440,7 +9230,7 @@ Method `__mul__` should never be called directly, instead `my_str * n` syntax sh
 
 [`str`](#class_builtin_str)
 
-—
+---
 
 ### <a name="func_builtin_sum">`sum()`</a>
 
@@ -9480,7 +9270,7 @@ Built-in Indie object (similar to Python's).
 
 [`bool`](#class_builtin_bool)
 
-—
+---
 
 ### <a name="obj_builtin_None">`None`</a>
 
@@ -9492,7 +9282,7 @@ Built-in Indie object (similar to Python's).
 
 [`NoneType`](#class_builtin_NoneType)
 
-—
+---
 
 ### <a name="obj_builtin_True">`True`</a>
 
